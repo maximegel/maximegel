@@ -73,10 +73,26 @@
       "id": "lineNumbers",
       "values": [
         {
-          "editor.lineNumbers": "relative"
+          "editor.lineNumbers": "on"
         },
         {
+          "editor.lineNumbers": "relative"
+        }
+      ]
+    },
+    {
+      "id": "lineNumbersOn",
+      "values": [
+        {
           "editor.lineNumbers": "on"
+        }
+      ]
+    },
+    {
+      "id": "lineNumbersRelative",
+      "values": [
+        {
+          "editor.lineNumbers": "relative"
         }
       ]
     }
@@ -86,24 +102,24 @@
     {
       "text": "TODO:",
       "color": "black",
-      "backgroundColor": "#9CDCFE",
-      "overviewRulerColor": "#9CDCFE"
+      "backgroundColor": "#9cdcfe",
+      "overviewRulerColor": "#9cdcfe"
     },
     {
       "text": "FIXME:",
       "color": "black",
-      "backgroundColor": "#C586C0",
-      "overviewRulerColor": "#C586C0"
+      "backgroundColor": "#c586c0",
+      "overviewRulerColor": "#c586c0"
     },
     {
       "text": "NOTE:",
-      "backgroundColor": "#5ECEB7",
-      "overviewRulerColor": "#5ECEB7"
+      "backgroundColor": "#5eceB7",
+      "overviewRulerColor": "#5eceB7"
     },
     {
       "text": "HACK:",
-      "backgroundColor": "#DCDCAA",
-      "overviewRulerColor": "#DCDCAA"
+      "backgroundColor": "#dcdcaa",
+      "overviewRulerColor": "#dcdcaa"
     }
   ],
   "todohighlight.defaultStyle": {
@@ -116,8 +132,9 @@
   "vim.camelCaseMotion.enable": true,
   "vim.easymotion": true,
   "vim.easymotionIncSearchForegroundColor": "#000000",
-  "vim.easymotionJumpToAnywhereRegex": "^[\\w<\"]",
-  "vim.easymotionMarkerBackgroundColor": "#CE9178",
+  "vim.easymotionJumpToAnywhereRegex": "^\\s*[\\w<\"#\\.@]|(?<=[{\\(])[\\w-_\\$]",
+  "vim.easymotionKeys": "arstdhneiofplu",
+  "vim.easymotionMarkerBackgroundColor": "#ce9178",
   "vim.easymotionMarkerForegroundColorOneChar": "#000000",
   "vim.easymotionMarkerForegroundColorTwoCharFirst": "#000000",
   "vim.easymotionMarkerForegroundColorTwoCharSecond": "#000000",
@@ -136,7 +153,7 @@
         "<Esc>"
       ],
       "commands": [
-        "settings.cycle.lineNumbers"
+        "settings.cycle.lineNumbersRelative"
       ]
     }
   ],
@@ -164,7 +181,7 @@
         "a"
       ],
       "commands": [
-        "settings.cycle.lineNumbers"
+        "settings.cycle.lineNumbersOn"
       ]
     },
     {
@@ -175,14 +192,13 @@
         "i"
       ],
       "commands": [
-        "settings.cycle.lineNumbers"
+        "settings.cycle.lineNumbersOn"
       ]
     }
   ],
   "vim.visualModeKeyBindings": [],
   "vim.visualModeKeyBindingsNonRecursive": [],
   // ## YAML
-  "redhat.telemetry.enabled": false,
-  "security.workspace.trust.untrustedFiles": "open"
+  "redhat.telemetry.enabled": false
   // #endregion
 }

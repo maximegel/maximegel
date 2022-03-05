@@ -138,28 +138,28 @@
     // `Shift` + `Alt` + `DownArrow`
     "key": "shift+alt+down",
     "command": "workbench.action.decreaseViewHeight",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus"
   },
   // # Increase Editor Height
   {
     // `Shift` + `Alt` + `UpArrow`
     "key": "shift+alt+up",
     "command": "workbench.action.increaseViewHeight",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus"
   },
   // # Decrease Editor Width
   {
     // `Shift` + `Alt` + `LeftArrow`
     "key": "shift+alt+left",
     "command": "workbench.action.decreaseViewWidth",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus"
   },
   // # Increase Editor Width
   {
     // `Shift` + `Alt` + `RightArrow`
     "key": "shift+alt+right",
     "command": "workbench.action.increaseViewWidth",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+    "when": "editorTextFocus"
   },
   // # View: Close All Editors in Group
   {
@@ -172,28 +172,84 @@
     // `Alt` + `UpArrow`
     "key": "alt+up",
     "command": "workbench.action.focusAboveGroup",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+    "when": "(editorTextFocus && vim.mode == 'Normal') || editorReadonly"
   },
   // # View: Focus Editor Group Below
   {
     // `Alt` + `DownArrow`
     "key": "alt+down",
     "command": "workbench.action.focusBelowGroup",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+    "when": "(editorTextFocus && vim.mode == 'Normal') || editorReadonly"
   },
   // # View: Focus Left Editor Group
   {
     // `Alt` + `LeftArrow`
     "key": "alt+left",
     "command": "workbench.action.focusLeftGroup",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+    "when": "(editorTextFocus && vim.mode == 'Normal') || editorReadonly"
   },
-  // # View: View: Focus Right Editor Group
+  // # View: Focus Right Editor Group
   {
     // `Alt` + `RightArrow`
     "key": "alt+right",
     "command": "workbench.action.focusRightGroup",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+    "when": "(editorTextFocus && vim.mode == 'Normal') || editorReadonly"
+  },
+  // # View: Move Editor Group Down
+  {
+    // `Ctrl` + `Shift` + `Alt` + `DownArrow`
+    "key": "ctrl+shift+alt+down",
+    "command": "workbench.action.moveActiveEditorGroupDown",
+    "when": "editorTextFocus"
+  },
+  // # View: Move Editor Group Left
+  {
+    // `Ctrl` + `Shift` + `Alt` + `LeftArrow`
+    "key": "ctrl+shift+alt+left",
+    "command": "workbench.action.moveActiveEditorGroupLeft",
+    "when": "editorTextFocus"
+  },
+  // # View: Move Editor Group Right
+  {
+    // `Ctrl` + `Shift` + `Alt` + `RightArrow`
+    "key": "ctrl+shift+alt+right",
+    "command": "workbench.action.moveActiveEditorGroupRight",
+    "when": "editorTextFocus"
+  },
+  // # View: Move Editor Group Up
+  {
+    // `Ctrl` + `Shift` + `Alt` + `UpArrow`
+    "key": "ctrl+shift+alt+up",
+    "command": "workbench.action.moveActiveEditorGroupUp",
+    "when": "editorTextFocus"
+  },
+  // # View: Move Editor into Group Above
+  {
+    // `Ctrl` + `Alt` + `UpArrow`
+    "key": "ctrl+alt+up",
+    "command": "workbench.action.moveEditorToAboveGroup",
+    "when": "editorTextFocus"
+  },
+  // # View: Move Editor into Group Below
+  {
+    // `Ctrl` + `Alt` + `DownArrow`
+    "key": "ctrl+alt+down",
+    "command": "workbench.action.moveEditorToBelowGroup",
+    "when": "editorTextFocus"
+  },
+  // # View: Move Editor into Left Group
+  {
+    // `Ctrl` + `Alt` + `LeftArrow`
+    "key": "ctrl+alt+left",
+    "command": "workbench.action.moveEditorToLeftGroup",
+    "when": "editorTextFocus"
+  },
+  // # View: Move Editor into Right Group
+  {
+    // `Ctrl` + `Alt` + `RightArrow`
+    "key": "ctrl+alt+right",
+    "command": "workbench.action.moveEditorToRightGroup",
+    "when": "editorTextFocus"
   },
   // # View: Split Editor
   {
