@@ -1,0 +1,235 @@
+[
+  // #region ### Editor ###
+  // # Rename Symbol
+  {
+    // `Ctrl` + `R`
+    "key": "ctrl+r",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  // # Toggle Line Comment
+  {
+    // `Ctrl` + `/`
+    "key": "ctrl+oem_7",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // #endregion
+  // #region ### Explorer ###
+  // # File: Delete File
+  {
+    // `D`
+    "key": "d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  // # File: New File
+  {
+    // `A`
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  // # File: New Folder
+  {
+    // `Shift` + `A`
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  // # File: Rename File
+  {
+    // `Ctrl` + `R`
+    "key": "ctrl+r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  // # Open in Terminal
+  {
+    "key": "ctrl+t",
+    "command": "openInTerminal",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  // #endregion
+  // #region ### Workbenck ###
+  // #region ## File
+  // # File: Save All Files
+  {
+    // `Ctrl` + `Shift` + `S`
+    "key": "ctrl+shift+s",
+    "command": "workbench.action.files.saveFiles"
+  },
+  // # File: Reveal Active File in Side Bar
+  {
+    // `Ctrl` + `Shift` + `E`
+    "key": "ctrl+shift+e",
+    "command": "workbench.files.action.showActiveFileInExplorer",
+    "when": "editorTextFocus"
+  },
+  // #endregion
+  // #region ## Terminal
+  // # Terminal: Create New Integrated Terminal
+  {
+    // `Ctrl` + `T`
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  // # Terminal: Focus Next Terminal
+  {
+    // `Ctrl` + `Tab`
+    "key": "ctrl+tab",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  // # Terminal: Focus Previous Terminal
+  {
+    // `Ctrl` + `Shift` + `Tab`
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  // # Terminal: Kill the Active Terminal Instance
+  {
+    // `Ctrl` + `W`
+    "key": "ctrl+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  // # Terminal: Resize Terminal Down
+  {
+    // `Shift` + `Alt` + `DownArrow`
+    "key": "shift+alt+down",
+    "command": "workbench.action.terminal.resizePaneDown",
+    "when": "terminalFocus"
+  },
+  // # Terminal: Resize Terminal Left
+  {
+    // `Shift` + `Alt` + `LeftArrow`
+    "key": "shift+alt+left",
+    "command": "workbench.action.terminal.resizePaneLeft",
+    "when": "terminalFocus"
+  },
+  // # Terminal: Resize Terminal Right
+  {
+    // `Shift` + `Alt` + `RightArrow`
+    "key": "shift+alt+right",
+    "command": "workbench.action.terminal.resizePaneRight",
+    "when": "terminalFocus"
+  },
+  // # Terminal: Resize Terminal Up
+  {
+    // `Shift` + `Alt` + `UpArrow`
+    "key": "shift+alt+up",
+    "command": "workbench.action.terminal.resizePaneUp",
+    "when": "terminalFocus"
+  },
+  // # Terminal: Split Terminal
+  {
+    // `Shift` + `Alt` + `+`
+    "key": "shift+alt+oem_plus",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  // #endregion
+  // #region ## View
+  // # Decrease Editor Height
+  {
+    // `Shift` + `Alt` + `DownArrow`
+    "key": "shift+alt+down",
+    "command": "workbench.action.decreaseViewHeight",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  // # Increase Editor Height
+  {
+    // `Shift` + `Alt` + `UpArrow`
+    "key": "shift+alt+up",
+    "command": "workbench.action.increaseViewHeight",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  // # Decrease Editor Width
+  {
+    // `Shift` + `Alt` + `LeftArrow`
+    "key": "shift+alt+left",
+    "command": "workbench.action.decreaseViewWidth",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  // # Increase Editor Width
+  {
+    // `Shift` + `Alt` + `RightArrow`
+    "key": "shift+alt+right",
+    "command": "workbench.action.increaseViewWidth",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  // # View: Close All Editors in Group
+  {
+    // `Ctrl` + `Shift` + `W`
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.closeEditorsInGroup"
+  },
+  // # View: Focus Editor Group Above
+  {
+    // `Alt` + `UpArrow`
+    "key": "alt+up",
+    "command": "workbench.action.focusAboveGroup",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  // # View: Focus Editor Group Below
+  {
+    // `Alt` + `DownArrow`
+    "key": "alt+down",
+    "command": "workbench.action.focusBelowGroup",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  // # View: Focus Left Editor Group
+  {
+    // `Alt` + `LeftArrow`
+    "key": "alt+left",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  // # View: View: Focus Right Editor Group
+  {
+    // `Alt` + `RightArrow`
+    "key": "alt+right",
+    "command": "workbench.action.focusRightGroup",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  // # View: Split Editor
+  {
+    // `Shift` + `Alt` + `+`
+    "key": "shift+alt+oem_plus",
+    "command": "workbench.action.splitEditor",
+    "when": "editorTextFocus"
+  },
+  // # View: Split Editor Orthogonal
+  {
+    // `Shift` + `Alt` + `-`
+    "key": "shift+alt+oem_minus",
+    "command": "workbench.action.splitEditorOrthogonal",
+    "when": "editorTextFocus"
+  },
+  // # View: Toggle Terminal
+  {
+    // `Ctrl` + `Shift` + `J`
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  // #endregion
+  // #endregion
+  // #region ### Extensions ###
+  // # Settings Cycler: Toggle Color Theme
+  {
+    // `Shift` + `Alt` + `D`
+    "key": "shift+alt+d",
+    "command": "settings.cycle.colorTheme"
+  },
+  // # Settings Cycler: Toggle Line Numbers
+  {
+    // `Shift` + `Alt` + `L`
+    "key": "shift+alt+l",
+    "command": "settings.cycle.lineNumbers"
+  }
+  // #endregion
+]

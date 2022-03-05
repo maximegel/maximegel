@@ -1,0 +1,188 @@
+{
+  // #region ### Text Editor ###
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineNumbers": "relative",
+  "editor.linkedEditing": true,
+  "editor.matchBrackets": "never",
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [
+    80
+  ],
+  // ## Font
+  "editor.fontFamily": "'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.fontWeight": "500",
+  // ## Formatting
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  // ## Diff Editor
+  "diffEditor.renderSideBySide": false,
+  // ## Minimap
+  "editor.minimap.enabled": false,
+  // ## Suggestions
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.suggest.insertMode": "replace",
+  "editor.suggestSelection": "first",
+  // ## Files
+  "files.autoSave": "off",
+  // #endregion
+  // #region ### Workbench ###
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  // #endregion
+  // #region ### Features ###
+  // ## Explorer
+  "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
+  // ## Terminal
+  "terminal.external.windowsExec": "wt",
+  // #endregion
+  // #region ### Extensions ###
+  // ## Emmet
+  "emmet.triggerExpansionOnTab": true,
+  // ## Git
+  "git.autofetch": true,
+  "git.autoStash": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  // ## Git Graph
+  "git-graph.dialog.createBranch.checkOut": true,
+  // ## GitLens
+  "gitlens.keymap": "none",
+  // ## Merge Conflict
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  // ## Remote - Containers
+  "remote.containers.executeInWSL": true,
+  // ## Settings Cycler
+  "settings.cycle": [
+    {
+      "id": "colorTheme",
+      "values": [
+        {
+          "workbench.colorTheme": "Default Dark+"
+        },
+        {
+          "workbench.colorTheme": "Default Light+"
+        }
+      ]
+    },
+    {
+      "id": "lineNumbers",
+      "values": [
+        {
+          "editor.lineNumbers": "relative"
+        },
+        {
+          "editor.lineNumbers": "on"
+        }
+      ]
+    }
+  ],
+  // ## TODO Highlight
+  "todohighlight.keywords": [
+    {
+      "text": "TODO:",
+      "color": "black",
+      "backgroundColor": "#9CDCFE",
+      "overviewRulerColor": "#9CDCFE"
+    },
+    {
+      "text": "FIXME:",
+      "color": "black",
+      "backgroundColor": "#C586C0",
+      "overviewRulerColor": "#C586C0"
+    },
+    {
+      "text": "NOTE:",
+      "backgroundColor": "#5ECEB7",
+      "overviewRulerColor": "#5ECEB7"
+    },
+    {
+      "text": "HACK:",
+      "backgroundColor": "#DCDCAA",
+      "overviewRulerColor": "#DCDCAA"
+    }
+  ],
+  "todohighlight.defaultStyle": {
+    "color": "#000000"
+  },
+  // ## Typescript
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // ## Vim
+  "vim.camelCaseMotion.enable": true,
+  "vim.easymotion": true,
+  "vim.easymotionIncSearchForegroundColor": "#000000",
+  "vim.easymotionJumpToAnywhereRegex": "^[\\w<\"]",
+  "vim.easymotionMarkerBackgroundColor": "#CE9178",
+  "vim.easymotionMarkerForegroundColorOneChar": "#000000",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#000000",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#000000",
+  "vim.leader": "<space>",
+  "vim.sneak": true,
+  "vim.useCtrlKeys": false,
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    // # Settings Cycler: Set Line Numbers to "relative"
+    {
+      "before": [
+        "<Esc>"
+      ],
+      "after": [
+        "<Esc>"
+      ],
+      "commands": [
+        "settings.cycle.lineNumbers"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindings": [],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // # Easymotion: Jump to Anywhere
+    {
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "<leader>",
+        "j"
+      ]
+    },
+    // # Settings Cycler: Set Line Numbers to "on"
+    {
+      "before": [
+        "a"
+      ],
+      "after": [
+        "a"
+      ],
+      "commands": [
+        "settings.cycle.lineNumbers"
+      ]
+    },
+    {
+      "before": [
+        "i"
+      ],
+      "after": [
+        "i"
+      ],
+      "commands": [
+        "settings.cycle.lineNumbers"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [],
+  "vim.visualModeKeyBindingsNonRecursive": [],
+  // ## YAML
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open"
+  // #endregion
+}
