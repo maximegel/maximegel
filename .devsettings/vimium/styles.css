@@ -4,7 +4,7 @@
 
 #vimiumHintMarkerContainer div.internalVimiumHintMarker,
 #vimiumHintMarkerContainer div.vimiumHintMarker {
-  padding: 3px 0;
+  padding: 3px 1px;
   background: var(--vimium-color-primary);
   border: none;
   border-radius: 0;
